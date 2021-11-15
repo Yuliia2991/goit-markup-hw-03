@@ -72,6 +72,9 @@ body {
 }
 
 /* -------------------Стили хедера--------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container.box,
 .navigation {
   align-items: center;
