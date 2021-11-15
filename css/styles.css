@@ -148,7 +148,10 @@ body {
   color: var(--second-accent-color);
 }
 .hero-button {
+  min-width: 200px;
   padding: 10px 32px;
+  border-radius: 4px;
+  border-style: none;
 
   font-weight: 700;
   font-size: 16px;
@@ -156,6 +159,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--second-accent-color);
   background-color: var(--main-accent-color);
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -202,6 +206,12 @@ body {
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team-item {
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-content {
   text-align: center;
@@ -253,8 +263,19 @@ body {
 }
 
 /* ------------------------Стили для portfolio.html */
-
+.filters {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filters-button {
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-style: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -279,6 +300,8 @@ body {
 }
 .projects-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .projects-title {
   margin-bottom: 4px;
