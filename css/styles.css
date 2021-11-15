@@ -9,7 +9,6 @@
   --main-background-color: #ffffff;
   --second-background-color: #2f303a;
   --third-background-color: #f5f4fa;
-  --projects-gap: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -59,19 +58,25 @@ body {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* -------------------Стили хедера--------------- */
 .box {
   display: flex;
 }
+
+/* -------------------Стили хедера--------------- */
+.container.box,
+.navigation {
+  align-items: center;
+}
+
 .navigation-list,
 .contacts {
   font-weight: 500;
@@ -82,11 +87,19 @@ body {
 }
 .navigation-item:not(:last-child) {
   margin-right: 32px;
-  background-color: violet;
 }
-
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--navigation-text-color);
+}
+.contacts {
+  margin-left: auto;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 .contacts-link {
   color: var(--text-color);
@@ -98,9 +111,10 @@ body {
   color: var(--main-accent-color);
 }
 /* -------------Стили логотипа----------------- */
+.navigation > .logo {
+  margin-right: 93px;
+}
 .logo {
-  margin-bottom: 20px;
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -115,20 +129,26 @@ body {
 }
 /* -------------------Стили Героя-------------------- */
 .hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--second-background-color);
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-accent-color);
 }
 .hero-button {
   padding: 10px 32px;
-  text-align: center;
 
   font-weight: 700;
   font-size: 16px;
@@ -142,28 +162,55 @@ body {
   background-color: #188ce8;
 }
 /* ---------------------Преиумцщества-------------------- */
-
+.advantage {
+  align-items: center;
+}
 .advantage-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+}
+.advantage-item {
+  width: 270px;
+}
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
 }
 .advantage-text {
   line-height: 1.71;
   color: var(--text-color);
 }
 /* ---------------------Чем мы занимаемся------------------ */
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.works-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* -------------------------Наша команда--------------------- */
 .team {
   background-color: var(--third-background-color);
 }
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-person {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -181,20 +228,27 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-content > .logo {
+  display: block;
+  margin-bottom: 20px;
+}
 .address {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
 }
-.address-link[href="https://goo.gl/maps/ojqtrY3gg8iYZvjQA"]
-{
-  color: var(--second-accent-color);
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
+  color: var(--second-accent-color);
+}
+.address-contacts {
   color: var(--footer-contacts-color);
 }
-.address-link:hover,
-.address-link:focus {
+
+.address .link:hover,
+.address .link:focus {
   color: var(--main-accent-color);
 }
 
@@ -215,13 +269,13 @@ body {
 }
 .projects {
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--projects-gap));
-  margin-bottom: calc(-1 * var(--projects-gap));
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .projects-item {
-  flex-basis: calc(100% / 3 - var(--projects-gap));
-  margin-right: var(--projects-gap);
-  margin-bottom: var(--projects-gap);
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .projects-content {
   padding: 20px 24px;
