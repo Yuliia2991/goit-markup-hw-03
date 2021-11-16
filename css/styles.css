@@ -169,6 +169,9 @@ body {
   background-color: #188ce8;
 }
 /* ---------------------Преиумцщества-------------------- */
+.advantage-section {
+  padding-bottom: 0;
+}
 .advantage {
   align-items: center;
 }
