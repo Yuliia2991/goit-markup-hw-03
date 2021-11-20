@@ -32,6 +32,7 @@ h6 {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 button {
   cursor: pointer;
@@ -49,13 +50,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.list {
-  list-style: none;
-}
 .link {
   text-decoration: none;
 }
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -69,27 +66,18 @@ body {
 }
 .box {
   display: flex;
+  align-items: center;
 }
 
 /* -------------------Стили хедера--------------- */
 .header {
   border-bottom: 1px solid #ececec;
 }
-.container.box,
-.navigation {
-  align-items: center;
-}
-
-.navigation-list,
-.contacts {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
 .navigation-list .link.current {
   color: var(--main-accent-color);
 }
 .navigation-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 50px;
 }
 .navigation-link {
   display: block;
@@ -106,6 +94,11 @@ body {
 }
 .contacts-link {
   color: var(--text-color);
+}
+.navigation-link,
+.contacts-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .navigation-link:hover,
 .navigation-link:focus,
@@ -172,9 +165,6 @@ body {
 .advantage-section {
   padding-bottom: 0;
 }
-.advantage {
-  align-items: center;
-}
 .advantage-title {
   margin-bottom: 10px;
 
@@ -238,11 +228,9 @@ body {
 }
 /* --------------Стили футера-------------- */
 .footer {
-  background-color: var(--second-background-color);
-}
-.footer-content {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--second-background-color);
 }
 .footer-content > .logo {
   display: block;
